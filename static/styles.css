@@ -1,0 +1,41 @@
+body {
+    font-family: "Barlow", Arial, sans-serif;
+    margin: 0px 0px 24px 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+#header-box {
+    margin: 8px auto 16px auto;
+    text-align: center;
+}
+.header {
+    margin-bottom: 4px;
+    font-weight: bold;
+    font-size: 3em;
+}
+.header-link {
+    text-decoration: wavy underline;
+    color: black;
+}
+.header-link:hover {
+    color: crimson;
+}
+
+.highlight {
+    background-color: yellow;
+}
+.shiny {
+    mask-image: linear-gradient(-75deg, rgba(0,0,0, 1.0) 40%, rgba(0,0,0, 0.5) 50%, rgba(0,0,0, 1.0) 60%);
+    mask-size: 500%;
+    animation: shine 6s infinite;
+    }
+
+    @keyframes shine {
+    from {
+        mask-position: 150%;
+    }
+    to {
+        mask-position: -150%;
+    }
+}

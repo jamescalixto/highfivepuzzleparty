@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HighFive — MIT Mystery Hunt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+</head>
+<body>
+    <div id="header-box">
+        <div class="header">HighFive</div>
+        <div class="subheader">MIT Mystery Hunt 2025</div>
+    </div>
+
+    <h2>Login</h2>
+        <div class="biglink-container">
+            <p>username: <span class="highlight">[see pinned in <a href="" target="_blank">Discord</a>]</span></p>
+            <p>password: <span class="highlight">[see pinned in <a href="" target="_blank">Discord</a>]</span></p>
+        </div>
+
+    <h2>Links</h2>
+        <div class="biglink-container">
+            <p class="biglink"><a href="\" target="_blank">Hunt Puzzles</a></p>
+            <p class="biglink-description">Puzzle website</p>
+        </div>
+        <div class="biglink-container">
+            <p class="biglink"><a href="/board">Puzzle Board</a></p>
+            <p class="biglink-description">Puzzle progress tracker</p>
+        </div>
+        <div class="biglink-container">
+            <p class="biglink"><a href="" target="_blank">Google Sheets</a></p>
+            <p class="biglink-description">Actual puzzle work</p>
+        </div>
+        <div class="biglink-container">
+            <p class="biglink"><a href="" target="_blank">Discord</a></p>
+            <p class="biglink-description">Team chat</p>
+        </div>
+        <div class="biglink-container">
+            <p class="biglink"><a href="https://www.mitmh2025.com/" target="_blank">Hunt FAQ</a></p>
+            <p class="biglink-description">General Hunt information</p>
+        </div>
+        <div class="biglink-container">
+            <p class="biglink"><a href="" target="_blank">Health & Safety FAQ</a></p>
+            <p class="biglink-description">Health & safety guidelines</p>
+        </div>
+    <h2>In-Person Information</h2>
+    <div class="biglink-container">
+        <p class="biglink"><a href="" target="_blank">Liability waiver</a></p>
+        <p class="biglink-description">Mandatory for being on-campus</p>
+    </div>
+    <div class="biglink-container">
+        <p class="biglink"><a href="https://ist.mit.edu/mit-apps/atlas-mobile" target="_blank">MIT Atlas</a></p>
+        <p class="biglink-description">Campus access pass — see Discord for event invite link</p>
+    </div>
+    <h2>Schedule</h2>
+        <p>
+            <b>Kickoff</b> is Friday (1/17) @ noon, spread across 3 rooms due to Kresge construction:
+            <ul>
+                <li><a href="https://whereis.mit.edu/?go=34-101" target="_blank">34-101</a> (preferred)</li>
+                <li><a href="https://whereis.mit.edu/?go=45-230" target="_blank">45-230</a></li>
+                <li><a href="https://whereis.mit.edu/?go=10-250" target="_blank">10-250</a></li>
+            </ul>
+        </p>
+        <p>
+            <b><span class="highlight">Gala (Puzzle HQ):</span></b>
+            <ul>
+                <li><b><span class="highlight"><a href="https://whereis.mit.edu/?go=32" target="_blank">Stata Center (Building 32) 4th Floor R&D Commons</a></span></b></li>
+            </ul>
+        </p>
+        <p>
+            <b>On-campus access</b> to HQ during Hunt:
+            <ul>
+                <li>6AM - 7PM @ certain <a href="https://ist.mit.edu/sites/default/files/documents/public-map.pdf" target="_blank">entry doors</a></li>
+                <li>7PM - 1AM @ Bldg 26, south exterior entrance</li>
+                <li>1AM - 6AM campus <b>closed</b></li>
+            </ul>
+        </p>
+        <p>
+            <b>Wrapup</b> is Monday (1/20) @ noon, room <b>TBD</b>.
+        </p>
+</body>
+</html>
