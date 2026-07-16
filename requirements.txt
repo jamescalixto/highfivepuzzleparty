@@ -1,6 +1,0 @@
-discord-webhook
-gspread
-hupper
-Flask
-Flask-SocketIO
-waitress

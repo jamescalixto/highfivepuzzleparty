@@ -10,7 +10,7 @@ Full website for puzzle hunt information and puzzle board tracking. Designed to 
 # Setup
 
 ## General 
-- Install requirements with `pip install -r requirements.txt`.
+- Install dependencies and create a virtual environment with `uv sync`.
 - Ensure all information and all links in `index.html` are correct.
 - Delete existing `data/tasks.json`.
 
@@ -30,6 +30,6 @@ Full website for puzzle hunt information and puzzle board tracking. Designed to 
 - Buy a domain name and set it up on Cloudflare.
 - (optional) add filters to prevent undesired traffic from hitting the website.
 - Set up a new Ubuntu VM in [UTM](https://mac.getutm.app/) on the host computer.
-- Set up [Waitress](https://flask.palletsprojects.com/en/stable/deploying/waitress/) and [hupper](https://stackoverflow.com/questions/36817604/how-to-change-and-reload-python-code-in-waitress-without-restarting-the-server) and set up a localhost web server that automatically restarts when local files are changed.
+- Start the server using Uvicorn with auto-reload by running `uv run python server.py` (or `uv run uvicorn server:socket_app --reload`).
 - Set up a [Cloudflare tunnel](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/) to allow external traffic to connect to the localhost web server.
 - Setup Tailscale SSH on the computer and test `ssh` and `scp` for remote administration.
